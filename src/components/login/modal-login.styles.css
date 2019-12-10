@@ -1,0 +1,23 @@
+  .modal {
+    scroll-behavior: smooth;
+    animation: 300ms cubic-bezier(0.25, 0.1, 0.25, 1) 0s 1 normal forwards running k1;
+    z-index: 800;
+    right: 0px;
+    bottom: 0px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    top: 0;
+    position: fixed;
+    left: 0;
+    background-color: white; 
+  },
+  
+  .buttonSignIn {
+    background-color: white!important;
+    color: green!important;
+    font-weight: bold!important;
+    text-transform: initial!important;
+  }
