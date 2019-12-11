@@ -1,8 +1,7 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
-import {Popular} from './popular.component';
-import {Feed} from './feed.component.jsx';
+import {FeedContent, PopularContent} from './feed-content.component';
 import Hidden from '@material-ui/core/Hidden';
 
 const dataFeed = [
@@ -91,7 +90,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export const Content = () => {
+export const ContentContainer = () => {
   const classes = useStyles();
   return (
   
@@ -111,7 +110,7 @@ export const Content = () => {
             {/* POPULAR ARTICLE CONTAINER*/}
             <Grid className={classes.popularArticleContainer} container spacing={3}>
               {dataFeed.map(item=> 
-                <Popular 
+                <PopularContent 
                   id={item.id}
                   title={item.title}
                 />
@@ -140,7 +139,7 @@ export const Content = () => {
         item sm={12} md={8}>
         <Grid item container spacing={2} className={classes.contentCardContainer}>
           {dataFeed.map(item=> 
-            <Feed 
+            <FeedContent 
               id={item.id}
               url={item.url}
               basedOn={item.basedOn}

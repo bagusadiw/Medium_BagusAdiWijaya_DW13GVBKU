@@ -44,9 +44,26 @@ const useStyles = makeStyles(theme => ({
     backgroundSize: 'cover!important',
     display: 'block!important',
   },
+
+  popularArticle:{
+    display:'flex',
+    flexDirection: 'row',
+  },
+
+  popularRanking:{
+    color: 'lightgrey',
+    fontSize: '20pt',
+    fontWeight: 450,      
+
+  },
+
+  popularTitle:{
+    marginLeft: '10px',
+    fontWeight: 650,
+  },
 }));
 
-export const Feed = (props) => {
+export const FeedContent = (props) => {
   const classes = useStyles();
   return (
         <Grid item>
@@ -76,5 +93,21 @@ export const Feed = (props) => {
               />
           </CardActionArea>
         </Grid>
+  );
+}
+
+export const PopularContent = (props) => {
+    const classes = useStyles();
+    return (
+      <Grid item className={classes.popularArticle}>
+          <CardMedia className={classes.popularRanking}>
+            {props.id}
+          </CardMedia>  
+        <Grid className={classes.popularTitle}>
+
+          {props.title}
+        </Grid>
+      </Grid>
+    
   );
 }

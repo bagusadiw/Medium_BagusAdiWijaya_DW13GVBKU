@@ -4,9 +4,11 @@ import { makeStyles } from '@material-ui/core/styles';
 import Hidden from '@material-ui/core/Hidden';
 import Button from '@material-ui/core/Button';
 
-import {LargeCard} from './large-card.component';
-import {SmallCard} from './small-card.component';
-import {MediumCard} from './medium-card.component';
+// import {LargeCard} from './large-card.component';
+// import {SmallCard} from './small-card.component';
+// import {MediumCard} from './medium-card.component';
+
+import {LargeCard, SmallCard, MediumCard} from './featured-content.component';
 
 const dataLargeCard = [
   {
@@ -91,7 +93,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export const Featured = () => {
+export const FeaturedContainer = () => {
   const classes = useStyles();
   return (
     <Grid className={classes.root}>        

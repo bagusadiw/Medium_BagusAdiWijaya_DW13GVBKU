@@ -3,21 +3,24 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Grid from '@material-ui/core/Grid';
 import Img from 'react-image';
 import { makeStyles } from '@material-ui/core/styles';
-import {Featured} from './featured.component.jsx';
 import SearchIcon from '@material-ui/icons/Search';
 import NotificationsNoneIcon from '@material-ui/icons/NotificationsNone';
 
-import {Content} from './content.component';
+import {FeaturedContainer} from './featured-container.component.jsx';
+import NavigationBar from './navigation-bar.component.jsx';
+import {ContentContainer} from './content-container.component';
 import logo from '../../img/medium.svg.png'
 import {ModalSignUp} from '../sign-up/modal-sign-up.component';
 
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent:'center',
   },
 
   toolBar:{
-    backgroundColor: 'white!important',
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -59,14 +62,17 @@ export const Home = () => {
             </Grid>
           </Toolbar>
         </Grid>
+        <Grid>
+          <NavigationBar />
+        </Grid>
       </Grid>
 
       {/* FEATURED FEED */}
-      <Featured />
+      <FeaturedContainer />
   
       {/* CONTENT FEED*/}
       <Grid className={classes.contentFeedContainer}>
-        <Content /> 
+        <ContentContainer /> 
       </Grid>
     </Grid>
     
