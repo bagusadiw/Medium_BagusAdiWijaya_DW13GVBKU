@@ -1,12 +1,7 @@
 import React, {Component} from 'react';
-import {Home} from './components/home/home.component';
-// import Grid from '@material-ui/core/Grid';
-// import {
-//   BrowserRouter as Router,
-//   Switch,
-//   Route,
-//   Link
-// } from 'react-router-dom';
+import {CategoryContainer} from './components/category/category-container.component';
+// import {Home} from './components/home/home.component';
+
 
 import './App.css';
 
@@ -17,11 +12,12 @@ class App extends Component{
       modalSelector: '',
     }
   }
+  
   render(){
     return (
       <div className="App">
         
-        <Home /> 
+        <CategoryContainer /> 
 
       </div>      
     );

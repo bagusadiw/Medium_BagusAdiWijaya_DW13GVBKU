@@ -1,12 +1,31 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+
 import * as serviceWorker from './serviceWorker';
 import './fonts/toledo-serial-medium-regular.ttf';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from 'react-router-dom';
 
+import {ModalSignUp} from './components/sign-up/modalSignUp.component';
+import {Home} from './components/home/home.component';
+import {Article} from './components/article/article.component';
+import {CategoryContainer} from './components/category/category-container.component';
+
+ReactDOM.render(
+	<Router>
+		<Switch>
+			<Route exact path="/" component={Home} />
+			<Route path="/category" component={CategoryContainer} />
+			<Route path="/article" component={Article} />
+			<Route path="/modal" component={ModalSignUp} />
+		</Switch>
+	</Router>, document.getElementById('root')
+);
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
