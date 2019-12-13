@@ -291,8 +291,11 @@ export const Article = () =>{
 							</Typography>
 						</Grid>
 					</Grid>
-
 				</Grid>
+			</Grid>
+
+			<Grid>
+				
 			</Grid>
 		</Container>
 	);
