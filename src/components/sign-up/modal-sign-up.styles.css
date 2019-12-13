@@ -1,0 +1,19 @@
+  .modal {
+    scroll-behavior: smooth;
+    
+    z-index: 800;
+    right: 0px;
+    bottom: 0px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    top: 0;
+    position: fixed;
+    left: 0;
+    background-color: white; 
+  }
+  
+  .buttonSignUp {
+    font-weight: bold!important;
+    text-transform: initial!important;
+  }
