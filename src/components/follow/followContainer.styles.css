@@ -1,0 +1,112 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.tagContainer{
+	margin: 25px 64px 0 64px;
+	max-width: 680px;
+	width: 100%;
+	display: block;
+}
+
+.articleTag{
+	display: flex;
+	flex-direction: row;
+}
+
+.tag{
+	margin: 0 8px 8px 0;
+	display: inline-block;
+}
+
+.buttonsArticle{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 15px;
+}
+
+.claps{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.avatar{
+	height: 80px!important;
+	width: 80px!important;
+}
+
+.followContainer{
+	border-top: 1px solid rgba(0, 0, 0, 0.1); 
+	margin:25px 0;
+	padding-top: 32px;
+}
+
+.authorDescContainer{
+	display:flex; 
+	flex-direction: column;
+	justify-content: space-between;
+	margin-bottom: 32px;
+}
+
+.authorContainer{
+	display: flex; 
+	flex-direction:row;
+	width: 680px;
+	margin-bottom: -10px;
+}
+
+.authorName{ 
+	display:flex; 
+	flex-direction:column;
+	padding-left: 30px;
+	width: 100%;
+	justify-content: center;
+}
+
+.authorName > p {
+	text-transform: uppercase;
+	font-size: 13px;
+	color: grey;
+	width: 100%;
+}
+
+.author{
+	flex-direction:row; 
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.author p{
+	font-size: 26px;
+	color: black;
+	font-weight: 600;
+	text-transform: capitalize;
+}
+
+.buttonFollow{
+	margin-left: 8px!important;
+	padding-top: 0 0!important;
+	font-size: 12px!important;
+	font-weight: 600!important;
+}
+
+.desc{
+	max-width: 450px;
+	padding-left: 110px;
+	color: grey;
+}
+
+.response{
+	border-top: 1px solid rgba(0, 0, 0, 0.1); 
+	padding-top: 25px;
+}
+
+.buttonResponse{
+	width:100%;
+}

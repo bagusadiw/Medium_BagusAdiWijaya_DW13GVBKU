@@ -11,6 +11,7 @@ import {
   Route
 } from 'react-router-dom';
 
+import FollowContainer from './components/follow/followContainer.component';
 import {ModalSignUp} from './components/sign-up/modalSignUp.component';
 import {Home} from './components/home/home.component';
 import {Article} from './components/article/article.component';
@@ -23,6 +24,7 @@ ReactDOM.render(
 			<Route path="/category" component={CategoryContainer} />
 			<Route path="/article" component={Article} />
 			<Route path="/modal" component={ModalSignUp} />
+			<Route path="/follow" component={FollowContainer} />
 		</Switch>
 	</Router>, document.getElementById('root')
 );
